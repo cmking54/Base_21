@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Base_21</string>
+    <string name="button_name">Press</string>
+    <string-array name="choices">
+        <item>Choice 1</item>
+        <item>Choice 2</item>
+        <item>Other</item>
+    </string-array>
+</resources>
