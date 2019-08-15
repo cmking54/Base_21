@@ -1,5 +1,6 @@
 package com.christopher_matthew_king.base_21;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick_button(View view) {
         Spinner choices = findViewById(R.id.choices);
         TextView text_display = findViewById(R.id.text_display);
-        String text_output = "Base Text";
+        String text_output;
         //String.valueOf(choices.getSelectedItem());
         switch (String.valueOf(choices.getSelectedItem())) {
             case ("Choice 1"):
@@ -40,5 +41,10 @@ public class MainActivity extends AppCompatActivity {
         EditText text_box = findViewById(R.id.edit_text);
         TextView text_display = findViewById(R.id.text_display);
         text_display.setText(text_display.getText() + "\n" + text_box.getText());
+
+        Intent intent = new Intent(this, RecieveMessageActivity.class);
+        intent.putExtra("message", text_box.getText().toString());
+        startActivity(intent);
+
     }
 }

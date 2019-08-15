@@ -7,4 +7,5 @@
         <item>Other</item>
     </string-array>
     <string name="edit_button_name">Send</string>
+    <string name="title_activity_recieve_message">RecieveMessageActivity</string>
 </resources>
