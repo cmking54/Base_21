@@ -3,6 +3,7 @@ package com.christopher_matthew_king.base_21;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -31,5 +32,13 @@ public class MainActivity extends AppCompatActivity {
                 text_output = "Result 3\nResult 4";
         }
         text_display.setText(text_output);
+    }
+    /*
+    Recieving text from edit field and appending to textfield
+     */
+    public void onClick_editButton(View view) {
+        EditText text_box = findViewById(R.id.edit_text);
+        TextView text_display = findViewById(R.id.text_display);
+        text_display.setText(text_display.getText() + "\n" + text_box.getText());
     }
 }

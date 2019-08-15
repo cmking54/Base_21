@@ -6,4 +6,5 @@
         <item>Choice 2</item>
         <item>Other</item>
     </string-array>
+    <string name="edit_button_name">Send</string>
 </resources>
