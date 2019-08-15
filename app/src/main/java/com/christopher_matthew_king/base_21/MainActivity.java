@@ -42,8 +42,9 @@ public class MainActivity extends AppCompatActivity {
         TextView text_display = findViewById(R.id.text_display);
         text_display.setText(text_display.getText() + "\n" + text_box.getText());
 
-        Intent intent = new Intent(this, RecieveMessageActivity.class);
-        intent.putExtra("message", text_box.getText().toString());
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain"); // what is this?
+        intent.putExtra(Intent.EXTRA_TEXT, text_box.getText().toString());
         startActivity(intent);
 
     }
