@@ -45,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain"); // what is this?
         intent.putExtra(Intent.EXTRA_TEXT, text_box.getText().toString());
-        startActivity(intent);
+        Intent chosenIntent = Intent.createChooser(intent, "Send message with:");
+        startActivity(chosenIntent);
 
     }
 }
