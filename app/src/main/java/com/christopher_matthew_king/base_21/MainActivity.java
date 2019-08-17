@@ -1,14 +1,12 @@
 package com.christopher_matthew_king.base_21;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,5 +46,10 @@ public class MainActivity extends AppCompatActivity {
         Intent chosenIntent = Intent.createChooser(intent, "Send message with:");
         startActivity(chosenIntent);
 
+    }
+
+    public void onClick_next(View view) {
+        Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
     }
 }

@@ -8,4 +8,13 @@
     </string-array>
     <string name="edit_button_name">Send</string>
     <string name="title_activity_recieve_message">RecieveMessageActivity</string>
+    <string name="next_button_name">Next Example</string>
+    <string name="back_button_name">Prev Example</string>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="title_activity_choice">ChoiceActivity</string>
+    <string name="title_sample">Title</string>
+    <string name="description_sample">Description</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
